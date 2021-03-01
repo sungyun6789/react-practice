@@ -1,4 +1,5 @@
 import React from 'react';
+import TextField from '@material-ui/core/TextField';
 
 const BoardNew = ({ changeInput, inputData, onSaveButtonClick, resetForm }) => {
   const saveBtnClick = (e) => {
@@ -10,25 +11,28 @@ const BoardNew = ({ changeInput, inputData, onSaveButtonClick, resetForm }) => {
   return (
     <div>
       <form onSubmit={saveBtnClick}>
-        <div>
-          제목 :
-          <input
-            type="text"
-            name="boardTitle"
-            onChange={changeInput}
-            value={inputData.boardTitle}
-          />
+        <div align="center">
+          <div>
+            <TextField
+              id="boardTitle"
+              label="글제목"
+              name="boardTitle"
+              onChange={changeInput}
+              value={inputData.boardTitle}
+            />
+          </div>
+          &nbsp;
+          <div>
+            <TextField
+              id="boardContent"
+              label="내용"
+              name="boardContent"
+              onChange={changeInput}
+              value={inputData.boardContent}
+            />
+          </div>
         </div>
-        <div>
-          내용 :
-          <input
-            type="text"
-            name="boardContent"
-            onChange={changeInput}
-            value={inputData.boardContent}
-          />
-        </div>
-        <input type="hidden" name="boardId" onChange={changeInput} value={inputData.boardId} />
+        <TextField type="hidden" name="boardId" onChange={changeInput} value={inputData.boardId} />
         <button type="submit">저장</button>
       </form>
     </div>

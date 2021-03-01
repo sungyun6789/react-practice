@@ -11,6 +11,18 @@
       "boardId": 2,
       "boardTitle": "Title 2",
       "boardContent": "Content 2"
+    },
+    {
+      "id": 3,
+      "boardId": 3,
+      "boardTitle": "제목이야",
+      "boardContent": "내용이야"
+    },
+    {
+      "id": 4,
+      "boardId": 4,
+      "boardTitle": "Title 4",
+      "boardContent": "Content 4"
     }
   ]
 }

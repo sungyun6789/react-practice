@@ -1,15 +1,22 @@
 import React from 'react';
+import { TableRow, TableCell } from '@material-ui/core';
 
 const BoardList = ({ id, boardId, boardTitle, boardContent, onRowClick, onRemoveButtonClick }) => {
   return (
-    <tr>
-      <td onClick={() => onRowClick(id, boardId, boardTitle, boardContent)}>{boardId}</td>
-      <td onClick={() => onRowClick(id, boardId, boardTitle, boardContent)}>{boardTitle}</td>
-      <td onClick={() => onRowClick(id, boardId, boardTitle, boardContent)}>{boardContent}</td>
-      <td>
+    <TableRow>
+      <TableCell onClick={() => onRowClick(id, boardId, boardTitle, boardContent)}>
+        {boardId}
+      </TableCell>
+      <TableCell onClick={() => onRowClick(id, boardId, boardTitle, boardContent)}>
+        {boardTitle}
+      </TableCell>
+      <TableCell onClick={() => onRowClick(id, boardId, boardTitle, boardContent)}>
+        {boardContent}
+      </TableCell>
+      <TableCell>
         <button onClick={() => onRemoveButtonClick(id)}>삭제</button>
-      </td>
-    </tr>
+      </TableCell>
+    </TableRow>
   );
 };
 

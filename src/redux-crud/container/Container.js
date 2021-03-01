@@ -4,6 +4,9 @@ import BoardList from '../component/BoardList';
 import BoardNew from '../component/BoardNew';
 import { saveDataAsync, searchDataAsync, removeDataAsync } from '../module/boardReducer';
 
+// Material
+import { Table, TableHead, TableBody, TableRow, TableCell } from '@material-ui/core';
+
 function Container() {
   let [inputData, setInputData] = useState({
     id: '',
@@ -57,13 +60,15 @@ function Container() {
     <div>
       <button onClick={onSearchButtonClick}>조회</button>
       <div>
-        <table border="1">
-          <tbody>
-            <tr align="center">
-              <td width="50">번호</td>
-              <td width="100">제목</td>
-              <td width="200">내용</td>
-            </tr>
+        <Table>
+          <TableHead>
+            <TableRow align="center">
+              <TableCell width="50">번호</TableCell>
+              <TableCell width="100">제목</TableCell>
+              <TableCell width="200">내용</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
             {boards.length > 0 &&
               boards.map((row) => (
                 <BoardList
@@ -76,8 +81,8 @@ function Container() {
                   onRemoveButtonClick={onRemoveButtonClick}
                 />
               ))}
-          </tbody>
-        </table>
+          </TableBody>
+        </Table>
       </div>
       <div>
         <BoardNew

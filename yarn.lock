@@ -7614,6 +7614,11 @@ no-case@^3.0.4:
     lower-case "^2.0.2"
     tslib "^2.0.3"
 
+node-bin-setup@^1.0.0:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/node-bin-setup/-/node-bin-setup-1.0.6.tgz#4b5c9bb937ece702d7069b36ca78af4684677528"
+  integrity sha512-uPIxXNis1CRbv1DwqAxkgBk5NFV3s7cMN/Gf556jSw6jBvV7ca4F9lRL/8cALcZecRibeqU+5dFYqFFmzv5a0Q==
+
 node-forge@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
@@ -7674,6 +7679,13 @@ node-releases@^1.1.61, node-releases@^1.1.70:
   version "1.1.70"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.70.tgz#66e0ed0273aa65666d7fe78febe7634875426a08"
   integrity sha512-Slf2s69+2/uAD79pVVQo8uSiC34+g8GWY8UH2Qtqv34ZfhYrxpYpfzs9Js9d6O0mbDmALuxaTlplnBTnSELcrw==
+
+node@^15.8.0:
+  version "15.8.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-15.8.0.tgz#097049a9506f8d32ee69551345c5d8fb59bdd442"
+  integrity sha512-uuO9afbPl7CqTB9dqoYEW+co7r1/ott/kiG+btHx1ussJliolfELO6ryDp9JX0IIaRsyPgppP5FF4wkz5PP9Rw==
+  dependencies:
+    node-bin-setup "^1.0.0"
 
 normalize-package-data@^2.3.2, normalize-package-data@^2.5.0:
   version "2.5.0"
@@ -10754,6 +10766,11 @@ thunky@^1.0.2:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/thunky/-/thunky-1.1.0.tgz#5abaf714a9405db0504732bbccd2cedd9ef9537d"
   integrity sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==
+
+tig@^0.1.43:
+  version "0.1.43"
+  resolved "https://registry.yarnpkg.com/tig/-/tig-0.1.43.tgz#d8dba6b8b65cb60d6e5fb397e32a0f8ff3500943"
+  integrity sha1-2NumuLZctg1uX7OX4yoPj/NQCUM=
 
 timers-browserify@^2.0.4:
   version "2.0.12"
