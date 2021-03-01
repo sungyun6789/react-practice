@@ -1,10 +1,10 @@
 import React from 'react';
-import Container from './container/Container';
+import BoardList from './redux-crud/component/BoardList';
 
 const App = () => {
   return (
     <div>
-      <Container />
+      <BoardList />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import App from './App';
 
 import { Provider } from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
-import rootReducer, { rootSaga } from './module/rootReducer';
+import rootReducer, { rootSaga } from '../src/redux-crud/module/rootReducer';
 
 import { configureStore } from '@reduxjs/toolkit';
 
