@@ -1,12 +1,8 @@
 import React from 'react';
-import Container from './container/Container';
+import Users from './axios-example/Users';
 
 const App = () => {
-  return (
-    <div>
-      <Container />
-    </div>
-  );
+  return <Users />;
 };
 
 export default App;
