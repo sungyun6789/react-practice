@@ -1,10 +1,10 @@
 {
   "data": [
     {
-      "id": 1,
       "boardId": 1,
       "boardTitle": "Title 1",
-      "boardContent": "Content 1"
+      "boardContent": "Content 1",
+      "id": 1
     },
     {
       "id": 2,
@@ -23,6 +23,18 @@
       "boardId": 4,
       "boardTitle": "Title 4",
       "boardContent": "Content 4"
+    },
+    {
+      "id": 5,
+      "boardId": 5,
+      "boardTitle": "Title 5",
+      "boardContent": "Content 5"
+    },
+    {
+      "id": 6,
+      "boardId": 6,
+      "boardTitle": "Title 6",
+      "boardContent": "Content 6"
     }
   ]
 }
