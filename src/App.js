@@ -1,12 +1,7 @@
 import React from 'react';
-import BoardList from './redux-crud/component/BoardList';
+import Users from './axios-example/Users';
 
 const App = () => {
-  return (
-    <div>
-      <BoardList />
-    </div>
-  );
-};
+  return <Users />;
 
 export default App;
