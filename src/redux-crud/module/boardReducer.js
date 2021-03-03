@@ -11,9 +11,7 @@ const REMOVE_DATA_ASYNC = 'REMOVE_DATA_ASYNC';
 // Action Creator
 export const searchDataAsync = createAction(SEARCH_DATA_ASYNC);
 export const searchData = createAction(SEARCH_DATA);
-export const saveDataAsync = createAction(SAVE_DATA_ASYNC, (data, lastId) => ({
-  payload: { data, lastId },
-}));
+export const saveDataAsync = createAction(SAVE_DATA_ASYNC, (data, lastId) => ({ payload: { data, lastId } }));
 export const removeDataAsync = createAction(REMOVE_DATA_ASYNC);
 
 // Main Saga
