@@ -6,6 +6,7 @@ import Home from './router/Home';
 import Profiles from './router/Profiles';
 
 const App = () => {
+<<<<<<< HEAD
   return (
     <div>
       <ul>
@@ -41,5 +42,8 @@ const App = () => {
     </div>
   );
 };
+=======
+  return <Users />;
+>>>>>>> 69018cbf356cea8181c76d1ad1cf8c6a799fa39a
 
 export default App;

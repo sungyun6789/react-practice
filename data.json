@@ -1,16 +1,40 @@
 {
   "data": [
     {
-      "id": 1,
       "boardId": 1,
       "boardTitle": "Title 1",
-      "boardContent": "Content 1"
+      "boardContent": "Content 1",
+      "id": 1
     },
     {
       "id": 2,
       "boardId": 2,
       "boardTitle": "Title 2",
       "boardContent": "Content 2"
+    },
+    {
+      "id": 3,
+      "boardId": 3,
+      "boardTitle": "제목이야",
+      "boardContent": "내용이야"
+    },
+    {
+      "id": 4,
+      "boardId": 4,
+      "boardTitle": "Title 4",
+      "boardContent": "Content 4"
+    },
+    {
+      "id": 5,
+      "boardId": 5,
+      "boardTitle": "Title 5",
+      "boardContent": "Content 5"
+    },
+    {
+      "id": 6,
+      "boardId": 6,
+      "boardTitle": "Title 6",
+      "boardContent": "Content 6"
     }
   ]
 }
