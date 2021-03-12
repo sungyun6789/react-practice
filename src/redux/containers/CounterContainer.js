@@ -1,13 +1,28 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import Counter from '../component/Counter';
 import { increase, decrease, setDiff } from '../modules/counter';
 
 const CounterContainer = () => {
-  const { number, diff } = useSelector((state) => ({
-    number: state.counter.number,
-    diff: state.counter.diff,
-  }));
+  // 1 기존 사용 방식
+  // const { number, diff } = useSelector((state) => ({
+  //   number: state.counter.number,
+  //   diff: state.counter.diff,
+  // }));
+
+  // 2 최적화 방법(1)
+  // const number = useSelector((state) => state.counter.number);
+  // const diff = useSelector((state) => state.counter.diff);
+
+  // 3 최적화 방법(2)
+  // equalityFn?: (left: any, right: any) => boolean
+  const { number, diff } = useSelector(
+    (state) => ({
+      number: state.counter.number,
+      diff: state.counter.diff,
+    }),
+    shallowEqual,
+  );
 
   const dispatch = useDispatch();
   const onIncrease = () => dispatch(increase());
