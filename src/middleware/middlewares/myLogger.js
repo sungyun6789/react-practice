@@ -18,4 +18,4 @@ const myLogger = (store) => (next) => (action) => {
 //   dispatch(myThunk());
 // };
 
-// export default myLogger;
+export default myLogger;
