@@ -4,10 +4,10 @@ import App from './App';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './middleware/modules/index';
-// import { composeWithDevTools } from 'redux-devtools-extension';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import myLogger from './middleware/middlewares/myLogger';
 
-const store = createStore(rootReducer, applyMiddleware(myLogger));
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(myLogger)));
 
 ReactDOM.render(
   <Provider store={store}>
