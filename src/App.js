@@ -1,5 +1,4 @@
 import React from 'react';
-import PostListContainer from './middleware/containers/PostListContainer';
 import { Route } from 'react-router-dom';
 import PostListPage from './middleware/pages/PostListPage';
 import PostPage from './middleware/pages/PostPage';

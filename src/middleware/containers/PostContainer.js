@@ -4,7 +4,11 @@ import { getPost } from '../modules/posts';
 import Post from '../components/Post';
 
 const PostContainer = ({ postId }) => {
-  const { data, loading, error } = useSelector((state) => state.posts.post);
+  const { data, loading, error } = useSelector((state) => state.posts.post[postId]) || {
+    loading: false,
+    data: null,
+    error: null,
+  };
   const dispatch = useDispatch();
 
   useEffect(() => {
