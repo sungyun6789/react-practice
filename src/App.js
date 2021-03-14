@@ -1,11 +1,15 @@
 import React from 'react';
-import CounterContainer from './middleware/containers/CounterContainer';
+import PostListContainer from './middleware/containers/PostListContainer';
+import { Route } from 'react-router-dom';
+import PostListPage from './middleware/pages/PostListPage';
+import PostPage from './middleware/pages/PostPage';
 
 const App = () => {
   return (
-    <div>
-      <CounterContainer />
-    </div>
+    <>
+      <Route path="/" component={PostListPage} exact={true} />
+      <Route path="/:id" component={PostPage} />
+    </>
   );
 };
 
