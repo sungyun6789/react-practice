@@ -1,40 +1,19 @@
 {
-  "data": [
+  "posts": [
     {
-      "boardId": 1,
-      "boardTitle": "Title 1",
-      "boardContent": "Content 1",
-      "id": 1
+      "id": 1,
+      "title": "리덕스 미들웨어를 배워봅시다",
+      "body": "리덕스 미들웨어를 직접 만들어보면 이해하기 쉽죠."
     },
     {
       "id": 2,
-      "boardId": 2,
-      "boardTitle": "Title 2",
-      "boardContent": "Content 2"
+      "title": "redux-thunk를 사용해봅시다",
+      "body": "redux-thunk를 사용해서 비동기 작업을 처리해봅시다!"
     },
     {
       "id": 3,
-      "boardId": 3,
-      "boardTitle": "제목이야",
-      "boardContent": "내용이야"
-    },
-    {
-      "id": 4,
-      "boardId": 4,
-      "boardTitle": "Title 4",
-      "boardContent": "Content 4"
-    },
-    {
-      "id": 5,
-      "boardId": 5,
-      "boardTitle": "Title 5",
-      "boardContent": "Content 5"
-    },
-    {
-      "id": 6,
-      "boardId": 6,
-      "boardTitle": "Title 6",
-      "boardContent": "Content 6"
+      "title": "redux-saga도 사용해봅시다",
+      "body": "나중엔 redux-saga를 사용해서 비동기 작업을 처리하는 방법도 배워볼 거예요."
     }
   ]
 }
