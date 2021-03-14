@@ -7,15 +7,26 @@ import rootReducer from './middleware/modules/index';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import myLogger from './middleware/middlewares/myLogger';
 import ReduxThunk from 'redux-thunk';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
-const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(ReduxThunk, myLogger)));
+const customHistory = createBrowserHistory();
+
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(
+    applyMiddleware(
+      ReduxThunk.withExtraArgument({ history: customHistory }),
+      myLogger,
+    ),
+  ),
+);
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router history={customHistory}>
     <Provider store={store}>
       <App />
     </Provider>
-  </BrowserRouter>,
+  </Router>,
   document.getElementById('root'),
 );
