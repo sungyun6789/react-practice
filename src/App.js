@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import PostListPage from './middleware/pages/PostListPage';
 import PostPage from './middleware/pages/PostPage';
-import CounterContainer from './middleware/containers/CounterContainer'
+import CounterContainer from './middleware/containers/CounterContainer';
 
 const App = () => {
   return (
