@@ -1,17 +1,8 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
-import PostListPage from './middleware/pages/PostListPage';
-import PostPage from './middleware/pages/PostPage';
-import CounterContainer from './middleware/containers/CounterContainer';
+import React, { useState } from 'react';
+import NewsList from './news-viewer/NewsList';
 
 const App = () => {
-  return (
-    <>
-      <CounterContainer />
-      <Route path="/" component={PostListPage} exact={true} />
-      <Route path="/:id" component={PostPage} />
-    </>
-  );
+  return <NewsList />;
 };
 
 export default App;
