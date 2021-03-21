@@ -1,16 +1,14 @@
 import React from 'react';
-import ColorBox from './useContext/components/ColorBox';
-import { ColorProvider } from './useContext/contexts/color';
-import SelectColors from './useContext/components/SelectColor';
+import Contents from './corona/Contents';
+import Header from './corona/Header';
+import './App.scss';
 
 const App = () => {
   return (
-    <ColorProvider>
-      <div>
-        <SelectColors />
-        <ColorBox />
-      </div>
-    </ColorProvider>
+    <div className="App">
+      <Header />
+      <Contents />
+    </div>
   );
 };
 
