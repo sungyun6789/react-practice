@@ -1,14 +1,11 @@
 import React from 'react';
-import Contents from './corona/Contents';
-import Header from './corona/Header';
-import './App.scss';
+import Example from './react-window/list';
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <Contents />
-    </div>
+    <>
+      <Example />
+    </>
   );
 };
 
