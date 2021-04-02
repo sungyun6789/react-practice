@@ -1,5 +1,4 @@
 import React from 'react';
-import data from '../data.json';
 import { FixedSizeList as List } from 'react-window';
 
 const Row = ({ index, style }) => <div style={style}>Row {index}</div>;
