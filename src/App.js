@@ -1,5 +1,5 @@
-import Context from './practical-react/context/Context';
+import Ref from './practical-react/ref/Ref';
 
 export default function App() {
-  return <Context />;
+  return <Ref />;
 }
