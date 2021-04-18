@@ -1,24 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import Header from './practical-react/2048-game/component/Header';
-import AboveGame from './practical-react/2048-game/component/AboveGame';
-import Game from './practical-react/2048-game/component/Game';
-import useLocalStorageNumber from './practical-react/hook/useLocalStorageNumber';
+import React, { createContext, useState, useContext } from 'react';
+
+const UserContext = createContext({ username: 'unknown', age: 0 });
 
 export default function App() {
-  const [score, setScore] = useState(0);
-  const [bestScore, setBestScore] = useLocalStorageNumber('bestScore', 0);
-
-  useEffect(() => {
-    if (score > bestScore) {
-      setBestScore(score);
-    }
-  });
+  const [user, setUser] = useState({ username: 'mike', age: 23 });
+  const [count, setCount] = useState(0);
+  console.log('App render');
 
   return (
-    <div className="container">
-      <Header score={score} bestScore={bestScore} />
-      <AboveGame />
-      <Game setScore={setScore} />
+    <div>
+      <UserContext.Provider value={user}>
+        <Profile />
+        <button onClick={() => setCount(count + 1)}>증가</button>
+      </UserContext.Provider>
     </div>
   );
+}
+
+const Profile = React.memo(function () {
+  console.log('Profile render');
+  return (
+    <div>
+      <Greeting />
+    </div>
+  );
+});
+
+function Greeting() {
+  console.log('Greeting render');
+  const { username } = useContext(UserContext);
+  return <p>{`${username}님 안녕하세요`}</p>;
 }
