@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import times from 'lodash/times';
 import useMoveTile from '../hook/useMoveTile';
 import { getInitialTileList } from '../util/tile';
-import { MAX_POS } from '../constant';
+import { MAX_POS } from '../../constant';
 import Tile from './Tile';
 
 export default function Game({ setScore }) {
