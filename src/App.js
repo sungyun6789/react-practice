@@ -1,5 +1,5 @@
-import CallBack from './practical-react/hook/useCallback/CallBack';
+import ReducerTwo from './practical-react/hook/useReducer/ReducerTwo';
 
 export default function App() {
-  return <CallBack />;
+  return <ReducerTwo />;
 }
