@@ -1,5 +1,5 @@
-import Ref from './practical-react/ref/Ref';
+import Memo from './practical-react/hook/memo/Memo';
 
 export default function App() {
-  return <Ref />;
+  return <Memo />;
 }
