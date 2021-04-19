@@ -1,5 +1,5 @@
-import Memo from './practical-react/hook/memo/Memo';
+import CallBack from './practical-react/hook/useCallback/CallBack';
 
 export default function App() {
-  return <Memo />;
+  return <CallBack />;
 }
