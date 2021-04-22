@@ -1,5 +1,5 @@
-import ReducerTwo from './practical-react/hook/useReducer/ReducerTwo';
+import MyComponent from './practical-react/structure/MyComponent';
 
 export default function App() {
-  return <ReducerTwo />;
+  return <MyComponent />;
 }
