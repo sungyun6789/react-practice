@@ -1,5 +1,9 @@
-import MyComponent from './practical-react/structure/MyComponent';
+import EffectComponent from './practical-react/useEffect/EffectComponent';
 
 export default function App() {
-  return <MyComponent />;
+  return (
+    <div>
+      <EffectComponent />
+    </div>
+  );
 }
