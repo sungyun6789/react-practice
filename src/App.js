@@ -1,9 +1,9 @@
-import MyComponent2 from './practical-react/render/MyComponent2';
+import MyComponent4 from './practical-react/render/MyComponent4';
 
 export default function App() {
   return (
     <>
-      <MyComponent2 />
+      <MyComponent4 />
     </>
   );
 }
