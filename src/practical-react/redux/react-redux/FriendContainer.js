@@ -1,19 +1,21 @@
-import React, { useEffect, useReducer } from 'react';
+import React from 'react';
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import TimeLine from './TimeLine';
-// import {getNextTimeLine} from
 
 const TimeLineContainer = () => {
-  const [, forceUpdate] = useReducer((v) => v + 1, 0);
-  useEffect(() => {
-    const unsubscribe = store.subscribe(() => forceUpdate());
-    return () => unsubscribe();
-  }, []);
+  const [friends1, friends2] = useSelector(
+    (state) => [state.friends.friends1, state.friends.friends2],
+    shallowEqual,
+  );
+  const dispatch = useDispatch();
+
   function onAdd() {
-    const timeline = getNextTimeline();
-    store.dispatch(addTimeline(timeline));
+    const friend = getNextTimeline();
+    dispatch(addTimeline(friend));
   }
-  console.log('TimelineMain render');
-  const timelines = store.getState().timeline.timelines;
+
+  console.log('FriendMain render');
+
   return (
     <div>
       <button onClick={onAdd}>친구 추가</button>
