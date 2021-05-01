@@ -1,17 +1,15 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import PostListPage from './middleware/pages/PostListPage';
-import PostPage from './middleware/pages/PostPage';
-import CounterContainer from './middleware/containers/CounterContainer';
+import { Provider } from 'react-redux';
+import FriendContainer from './practical-react/redux/react-redux/FriendContainer';
+import TimeLineContainer from './practical-react/redux/react-redux/TimeLineContainer';
 
-const App = () => {
+export default function App() {
   return (
-    <>
-      <CounterContainer />
-      <Route path="/" component={PostListPage} exact={true} />
-      <Route path="/:id" component={PostPage} />
-    </>
+    <Provider store={store}>
+      <div>
+        <FriendContainer />
+        <TimeLineContainer />
+      </div>
+    </Provider>
   );
-};
-
-export default App;
+}
